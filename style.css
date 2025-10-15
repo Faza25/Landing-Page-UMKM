@@ -65,23 +65,20 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  background: #404240;
-background: linear-gradient(180deg, rgba(64, 66, 64, 1) 0%,rgba(173, 173, 170, 0.8) 50% , rgba(173, 173, 170, 0.7) 74%, rgba(240, 238, 218, 0) 100%);
+  background: #3d3d3d;
+  background: linear-gradient(180deg, rgba(61, 61, 61, 1) 0%,rgba(130, 129, 129, 0.87) 52% , rgba(165, 163, 1163, 0.66) 78%, rgba(180, 178, 178, 0.24) 89%, rgba(255, 255, 255, 0.49) 100%);
   z-index: 1000;
   transition: background-color 0.3s, box-shadow 0.3s;
+  justify-content: space-between;
   height: 80px;
   display: flex;
   align-items: center;
+  padding: 0 40px; /* <-- Tambahkan ini untuk memberi jarak dari tepi layar */
+  box-sizing: border-box; /* <-- Tambahkan ini agar padding tidak menambah lebar */
 }
 
 #navbar.scrolled {
   box-shadow: var(--shadow);
-}
-
-#navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -109,6 +106,43 @@ background: linear-gradient(180deg, rgba(64, 66, 64, 1) 0%,rgba(173, 173, 170, 0
 
 .nav-menu a:hover {
   color: var(--secondary-color);
+}
+
+.nav-left, .nav-center, .nav-right {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+}
+
+.umkm {
+  color: rgb(57, 173, 57);
+}
+
+.nav-center {
+  justify-content: center;
+}
+
+.nav-right {
+  justify-content: flex-end; 
+  gap: 15px; 
+}
+
+/* Menyamakan ukuran tombol di navbar kanan */
+.nav-right .btn {
+  min-width: 110px; /* Atur lebar minimum, bisa disesuaikan */
+  text-align: center; /* Memastikan teks selalu di tengah tombol */
+  justify-content: center; /* Untuk flex-item agar konten di tengah */
+}
+
+.btn.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--light-text);
+}
+
+.btn.btn-outline:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
 }
 
 /* --- Carousel / Home Section --- */

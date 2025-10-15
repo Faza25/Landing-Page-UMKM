@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Aceh",
             harga: "Rp 75.000",
             deskripsi: "Kopi arabika berkualitas tinggi dengan aroma khas dan cita rasa yang kompleks.",
-            gambar: "https://via.placeholder.com/300x200/A7C7E7/FFFFFF?text=Kopi+Gayo",
+            gambar: "Images/kopi-gayo.jpg",
             produsen: "Gayo Mountain Coffee"
         },
         {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Pekalongan",
             harga: "Rp 250.000",
             deskripsi: "Kain batik tulis dengan motif pesisir yang cerah dan detail yang halus.",
-            gambar: "https://via.placeholder.com/300x200/E7A7C7/FFFFFF?text=Batik+Pekalongan",
+            gambar: "Images/batik-pekalongan.jpg",
             produsen: "Pesisir Art Batik"
         },
         {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Malang",
             harga: "Rp 30.000",
             deskripsi: "Camilan renyah dan sehat yang terbuat dari apel segar pilihan dari perkebunan Malang.",
-            gambar: "https://via.placeholder.com/300x200/C7E7A7/FFFFFF?text=Keripik+Apel",
+            gambar: "Images/keripik-apel.jpg",
             produsen: "Malang Snack"
         },
         {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Sumbawa",
             harga: "Rp 150.000",
             deskripsi: "Madu murni yang dipanen secara lestari dari hutan Sumbawa, kaya akan nutrisi.",
-            gambar: "https://via.placeholder.com/300x200/E7C7A7/FFFFFF?text=Madu+Sumbawa",
+            gambar: "Images/madu-hutan.jpg",
             produsen: "Sumbawa Honey"
         },
         {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Sumba",
             harga: "Rp 850.000",
             deskripsi: "Kain tenun tangan tradisional dengan motif dan pewarnaan alami yang khas.",
-            gambar: "https://via.placeholder.com/300x200/A7A7E7/FFFFFF?text=Tenun+Sumba",
+            gambar: "Images/tenun-ikat.jpeg",
             produsen: "Sumba Weavers"
         },
         {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Cirebon",
             harga: "Rp 750.000",
             deskripsi: "Kursi santai yang terbuat dari anyaman rotan alami, kuat dan estetik.",
-            gambar: "https://via.placeholder.com/300x200/DEB887/FFFFFF?text=Kursi+Rotan",
+            gambar: "Images/kursi-rotan.jpg",
             produsen: "Cirebon Rattan"
         },
         {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Yogyakarta",
             harga: "Rp 400.000",
             deskripsi: "Perhiasan perak murni buatan tangan dengan desain elegan khas Kotagede.",
-            gambar: "https://via.placeholder.com/300x200/C0C0C0/FFFFFF?text=Perak+Jogja",
+            gambar: "Images/kerajinan-perak.webp",
             produsen: "Silver Art Kotagede"
         },
         {
