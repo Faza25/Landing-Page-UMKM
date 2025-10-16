@@ -4,26 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UMKM Pekalongan</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <button id="toTopBtn" title="Kembali ke atas">
       <i class="fas fa-arrow-up"></i>
@@ -131,58 +119,90 @@
       </section>
 
       <section id="about" class="section-bg">
-        <div class="container">
-          <div class="section-title">
+    <div class="container">
+
+        <div class="section-title">
             <h2>Tentang Kami</h2>
-          </div>
-          <p>
-            Kami adalah platform yang didedikasikan untuk mengangkat dan
-            mempromosikan produk-produk unggulan dari Usaha Mikro, Kecil, dan
-            Menengah (UMKM) di seluruh penjuru daerah. Misi kami adalah
-            menghubungkan para pengrajin dan produsen lokal dengan pasar yang
-            lebih luas, sehingga potensi daerah dapat dikenal dan dinikmati oleh
-            semua orang.
-          </p>
         </div>
-      </section>
 
-      <section id="testimoni">
-        <div class="container">
-          <div class="section-title">
-            <h2>Testimoni Pelanggan</h2>
-          </div>
-          <div class="testimoni-grid">
-            <div class="testimoni-card">
-              <p>
-                "Produknya berkualitas tinggi dan otentik. Saya sangat senang
-                bisa mendukung UMKM lokal melalui website ini."
-              </p>
-              <div class="testimoni-author">
-                <img
-                  src="https://via.placeholder.com/80"
-                  alt="Foto Pelanggan 1"
-                />
-                <h4>Budi Santoso</h4>
-              </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/Images/pasar2.webp" alt="Tentang Potensi Daerah">
             </div>
-            <div class="testimoni-card">
-              <p>
-                "Pengirimannya cepat dan pelayanannya ramah. Website ini
-                memudahkan saya mencari oleh-oleh khas daerah."
-              </p>
-              <div class="testimoni-author">
-                <img
-                  src="https://via.placeholder.com/80"
-                  alt="Foto Pelanggan 2"
-                />
-                <h4>Citra Lestari</h4>
-              </div>
+            <div class="about-text">
+                <h3>Mengangkat Potensi Lokal Melalui Teknologi Digital.</h3>
+                <p class="fst-italic">
+                    Kami percaya bahwa setiap daerah memiliki potensi unik yang layak untuk dikenal dunia.
+                </p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Menjamin keaslian dan kualitas produk langsung dari produsen lokal.</li>
+                    <li><i class="fas fa-leaf"></i> Mendukung pertumbuhan ekonomi kreatif dan UMKM di seluruh Indonesia.</li>
+                    <li><i class="fas fa-rocket"></i> Memberikan platform digital yang mudah diakses untuk menjangkau pasar yang lebih luas.</li>
+                </ul>
+                <p>
+                    PotensiDaerah adalah jembatan antara para pengrajin, produsen, dan petani lokal dengan Anda. Misi kami adalah melestarikan kearifan lokal sekaligus mendorong inovasi agar produk daerah dapat bersaing di panggung global.
+                </p>
             </div>
-          </div>
         </div>
-      </section>
 
-      <section id="anggota" class="section-bg">
+    </div>
+</section>
+
+<section id="testimoni">
+    <div class="container">
+        <div class="section-title">
+            <h2>Apa Kata Mereka?</h2>
+            <p>Pengalaman pelanggan adalah prioritas utama kami.</p>
+        </div>
+
+        <div class="testimoni-grid">
+            <div class="testimoni-card">
+                <div class="testimoni-author">
+                    <img src="https://via.placeholder.com/80/A7C7E7/FFFFFF?text=BS" alt="Foto Pelanggan 1">
+                    <div>
+                        <h3>Budi Santoso</h3>
+                        <div class="testimoni-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">
+                    <i class="fas fa-quote-left"></i>
+                    Produknya berkualitas tinggi dan otentik. Saya sangat senang bisa mendukung UMKM lokal melalui website ini. Sangat direkomendasikan!
+                    <i class="fas fa-quote-right"></i>
+                </p>
+            </div>
+
+            <div class="testimoni-card">
+                <div class="testimoni-author">
+                    <img src="https://via.placeholder.com/80/E7A7C7/FFFFFF?text=CL" alt="Foto Pelanggan 2">
+                    <div>
+                        <h3>Citra Lestari</h3>
+                        <div class="testimoni-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="testimoni-text">
+                    <i class="fas fa-quote-left"></i>
+                    Pengirimannya cepat dan pelayanannya ramah. Website ini memudahkan saya mencari oleh-oleh khas daerah. Pilihan produknya juga banyak.
+                    <i class="fas fa-quote-right"></i>
+                </p>
+            </div>
+            
+            </div>
+    </div>
+</section>
+
+<section id="anggota" class="section-bg">
         <div class="container">
           <div class="section-title">
             <h2>Tim Kami</h2>
@@ -191,7 +211,7 @@
           <div class="team-grid">
             <div class="team-member">
               <img src="Images/atha.jpeg" alt="Foto Anggota 1" />
-              <h3>Nama Anggota 1</h3>
+              <h3>Nibras Atha S.</h3>
               <p>Project Manager</p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -201,7 +221,7 @@
             </div>
             <div class="team-member">
               <img src="Images/anin.jpeg" alt="Foto Anggota 2" />
-              <h3>Nama Anggota 2</h3>
+              <h3>Anindya Yuna C.</h3>
               <p>Frontend Developer</p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -211,7 +231,7 @@
             </div>
             <div class="team-member">
               <img src="Images/anwar.jpeg" alt="Foto Anggota 3" />
-              <h3>Nama Anggota 3</h3>
+              <h3>Khoirul Anwar</h3>
               <p>UI/UX Designer</p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -220,8 +240,8 @@
               </div>
             </div>
             <div class="team-member">
-              <img src="https://via.placeholder.com/150" alt="Foto Anggota 3" />
-              <h3>Nama Anggota 3</h3>
+              <img src="/Images/faza.jpg" alt="Foto Anggota 3" />
+              <h3>M.Faza Q</h3>
               <p>UI/UX Designer</p>
               <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -231,37 +251,110 @@
             </div>
           </div>
         </div>
-      </section>
+</section>
 
-      <section id="kontak">
-        <div class="container">
-          <div class="section-title">
+<section id="kontak" class="section-bg">
+    <div class="container">
+        <div class="section-title">
             <h2>Hubungi Kami</h2>
-          </div>
-          <div class="map-container">
-            <p>
-              Kunjungi kami di lokasi berikut atau hubungi kami melalui
-              informasi yang tersedia.
-            </p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4121203375917!2d109.63610717480991!3d-6.960615193039799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITSNU%20Pekalongan!5e0!3m2!1sid!2sid!4v1760510254637!5m2!1sid!2sid"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+            <p>Punya pertanyaan atau masukan? Jangan ragu untuk menghubungi kami.</p>
         </div>
-      </section>
-    </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 PotensiDaerah. Hak Cipta Dilindungi.</p>
-      </div>
-    </footer>
+        <div class="kontak-wrapper">
+            <div class="contact-form">
+                <form action="#" method="post" role="form" class="php-email-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Nama Anda</label>
+                            <input type="text" name="name" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Email Anda</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Subjek</label>
+                        <input type="text" class="form-control" name="subject" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Pesan</label>
+                        <textarea class="form-control" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.902348545806!2d109.6773363147728!3d-6.902201995012548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70242251276d49%3A0x6ea633513689f456!2sAlun-Alun%20Pekalongan!5e0!3m2!1sen!2sid!4v1668574169528!5m2!1sen!2sid" frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-column">
+                    <h4>PotensiDaerah</h4>
+                    <p>
+                        Jl. Pembangunan No. 123 <br>
+                        Jakarta Pusat, 10110<br>
+                        Indonesia <br><br>
+                        <strong><i class="fas fa-phone"></i> Telepon:</strong> +62 812 3456 7890<br>
+                        <strong><i class="fas fa-envelope"></i> Email:</strong> info@potensidaerah.com<br>
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Link Penting</h4>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#home">Home</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#about">Tentang Kami</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#produk">Produk</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Syarat & Ketentuan</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Kategori Produk</h4>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Kuliner</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Fashion</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Kerajinan</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Perabotan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Ikuti Kami</h4>
+                    <p>Temukan kami di platform media sosial.</p>
+                    <div class="social-links">
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 <strong><span>PotensiDaerah</span></strong>. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
