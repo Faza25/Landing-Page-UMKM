@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
-    // --- DATA PRODUK (Kini dengan properti 'kategori') ---
     const products = [
         {
             nama: "Kopi Gayo",
@@ -71,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Banten",
             harga: "Rp 50.000",
             deskripsi: "Gula aren organik murni dengan indeks glikemik rendah dan aroma yang khas.",
-            gambar: "https://via.placeholder.com/300x200/D2B48C/FFFFFF?text=Gula+Aren",
+            gambar: "Images/gula-aren.webp",
             produsen: "Banten Palm Sugar"
         },
          {
@@ -80,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Sumatera Utara",
             harga: "Rp 600.000",
             deskripsi: "Kain tradisional Batak yang memiliki makna simbolis dalam setiap motifnya.",
-            gambar: "https://via.placeholder.com/300x200/FF6347/FFFFFF?text=Kain+Ulos",
+            gambar: "Images/kain-ulos.jpeg",
             produsen: "Toba Creations"
         },
         {
@@ -89,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Bali",
             harga: "Rp 180.000",
             deskripsi: "Topeng ukiran kayu dengan detail artistik yang merepresentasikan budaya Bali.",
-            gambar: "https://via.placeholder.com/300x200/8B4513/FFFFFF?text=Topeng+Bali",
+            gambar: "Images/topeng-kayu.webp",
             produsen: "Bali Carvers"
         },
         {
@@ -98,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Bantul",
             harga: "Rp 120.000",
             deskripsi: "Gerabah dan keramik hias dengan desain unik yang dibuat secara tradisional.",
-            gambar: "https://via.placeholder.com/300x200/A0522D/FFFFFF?text=Keramik+Kasongan",
+            gambar: "Images/keramik-kasongan.jpg",
             produsen: "Kasongan Ceramic"
         },
         {
@@ -107,12 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
             daerah: "Jambi",
             harga: "Rp 65.000",
             deskripsi: "Teh hitam dari perkebunan teh tertinggi di Indonesia, aroma kuat dan rasa pekat.",
-            gambar: "https://via.placeholder.com/300x200/2E8B57/FFFFFF?text=Teh+Kayu+Aro",
+            gambar: "Images/tehkayuaro.jpg",
             produsen: "Kayu Aro Tea"
         }
     ];
 
-    // --- Variabel Global ---
     const productList = document.getElementById('productList');
     const searchInput = document.getElementById('searchInput');
     const navbar = document.getElementById('navbar');
@@ -125,19 +122,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentFilteredProducts = [];
     let itemsCurrentlyShown = 0;
 
-    // --- FUNGSI UTAMA UNTUK FILTER & PENCARIAN ---
     function applyFilters() {
         const searchTerm = searchInput.value.toLowerCase();
         const activeCategory = filterContainer.querySelector('.filter-btn.active').dataset.category;
 
         let filteredProducts = products;
 
-        // 1. Filter berdasarkan kategori
         if (activeCategory !== 'semua') {
             filteredProducts = filteredProducts.filter(product => product.kategori === activeCategory);
         }
 
-        // 2. Filter berdasarkan pencarian dari hasil kategori
         if (searchTerm) {
             filteredProducts = filteredProducts.filter(product => 
                 product.nama.toLowerCase().includes(searchTerm) ||
@@ -146,11 +140,9 @@ document.addEventListener('DOMContentLoaded', function() {
             );
         }
 
-        // Tampilkan produk yang sudah difilter
         setupProductDisplay(filteredProducts);
     }
 
-    // --- FUNGSI UNTUK MEMUAT LEBIH BANYAK PRODUK ---
     function loadMoreProducts() {
         const nextProducts = currentFilteredProducts.slice(itemsCurrentlyShown, itemsCurrentlyShown + productsPerPage);
         
@@ -179,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // --- FUNGSI UNTUK MERESET TAMPILAN PRODUK ---
     function setupProductDisplay(productsToDisplay) {
         currentFilteredProducts = productsToDisplay;
         productList.innerHTML = '';
@@ -187,7 +178,6 @@ document.addEventListener('DOMContentLoaded', function() {
         loadMoreProducts();
     }
 
-    // --- EVENT LISTENERS ---
     searchInput.addEventListener('input', applyFilters);
 
     filterButtons.forEach(button => {
@@ -200,7 +190,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loadMoreBtn.addEventListener('click', loadMoreProducts);
 
-    // --- KODE LAINNYA (TIDAK BERUBAH) ---
     window.onscroll = function() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             navbar.classList.add('scrolled');
@@ -225,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function() {
         navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', },
     });
 
-    // --- TAMPILKAN PRODUK SAAT HALAMAN PERTAMA DIBUKA ---
-    applyFilters(); // Menggunakan fungsi filter utama untuk memuat awal
+    applyFilters();
 
 });

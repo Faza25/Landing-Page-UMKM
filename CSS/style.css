@@ -1,7 +1,6 @@
-/* --- Global & Reset --- */
 :root {
-  --primary-color: #005a34; /* Warna hijau tua */
-  --secondary-color: #32a40f; /* Warna oranye */
+  --primary-color: #005a34;
+  --secondary-color: #32a40f;
   --light-bg: #f6f8f9;
   --dark-text: #333;
   --light-text: #fff;
@@ -16,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Offset untuk fixed navbar */
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -55,26 +54,24 @@ section {
   color: #666;
 }
 
-/* --- Header & Navbar --- */
 #header {
-  height: 10px; /* Memberi ruang agar konten tidak tertutup navbar */
+  height: 10px;
 }
 
 #navbar {
-  position: fixed; /* Diubah menjadi fixed */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   background: #3d3d3d;
-  /* background: linear-gradient(180deg, rgba(61, 61, 61, 1) 0%,rgba(130, 129, 129, 0.87) 52% , rgba(165, 163, 1163, 0.66) 78%, rgba(180, 178, 178, 0.24) 89%, rgba(255, 255, 255, 0.49) 100%); */
   z-index: 1000;
   transition: background-color 0.3s, box-shadow 0.3s;
   justify-content: space-between;
   height: 80px;
   display: flex;
   align-items: center;
-  padding: 0 40px; /* <-- Tambahkan ini untuk memberi jarak dari tepi layar */
-  box-sizing: border-box; /* <-- Tambahkan ini agar padding tidak menambah lebar */
+  padding: 0 40px;
+  box-sizing: border-box; 
 }
 
 #navbar.scrolled {
@@ -127,11 +124,10 @@ section {
   gap: 15px; 
 }
 
-/* Menyamakan ukuran tombol di navbar kanan */
 .nav-right .btn {
-  min-width: 110px; /* Atur lebar minimum, bisa disesuaikan */
-  text-align: center; /* Memastikan teks selalu di tengah tombol */
-  justify-content: center; /* Untuk flex-item agar konten di tengah */
+  min-width: 110px; 
+  text-align: center; 
+  justify-content: center; 
 }
 
 .btn.btn-outline {
@@ -145,11 +141,10 @@ section {
   color: var(--light-text);
 }
 
-/* --- Carousel / Home Section --- */
 #home .swiper {
   width: 100%;
   height: calc(100vh - 80px);
-   /* Tinggi layar dikurangi tinggi navbar */
+
 }
 
 #home .swiper-slide {
@@ -193,7 +188,6 @@ section {
   background-color: #d88441;
 }
 
-/* --- Search & Product Section --- */
 .search-container {
   text-align: center;
   margin-bottom: 40px;
@@ -273,11 +267,10 @@ section {
   color: #333;
 }
 
-/* --- About Section (Desain Baru) --- */
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Membuat 2 kolom dengan lebar sama */
-  gap: 40px; /* Jarak antara gambar dan teks */
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px; 
   align-items: center;
 }
 
@@ -289,7 +282,7 @@ section {
 }
 
 .about-image img:hover {
-    transform: scale(1.03); /* Efek zoom kecil saat disentuh mouse */
+    transform: scale(1.03); 
 }
 
 .about-text h3 {
@@ -325,16 +318,14 @@ section {
   color: var(--secondary-color);
 }
 
-/* Penyesuaian untuk layar kecil (Mobile) */
+
 @media (max-width: 768px) {
   .about-content {
-    grid-template-columns: 1fr; /* Kolom menjadi 1 jika layar kecil */
+    grid-template-columns: 1fr; 
     gap: 30px;
   }
 }
 
-/* --- Testimoni Section --- */
-/* --- Testimoni Section (Desain Baru) --- */
 .testimoni-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -377,7 +368,7 @@ section {
 }
 
 .testimoni-rating {
-  color: #ffc107; /* Warna emas untuk bintang */
+  color: #ffc107; 
   font-size: 1rem;
 }
 
@@ -385,7 +376,7 @@ section {
   font-style: italic;
   color: #555;
   line-height: 1.7;
-  flex-grow: 1; /* Memastikan kartu memiliki tinggi yang sama */
+  flex-grow: 1; 
   position: relative;
   padding: 0 10px;
 }
@@ -412,7 +403,6 @@ section {
   margin-right: 15px;
 }
 
-/* --- Anggota Kelompok Section --- */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -459,15 +449,13 @@ section {
   color: var(--secondary-color);
 }
 
-/* --- Kontak & Peta Section --- */
-/* --- Kontak Section (Desain Baru) --- */
 .kontak-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   box-shadow: var(--shadow);
   border-radius: 10px;
-  overflow: hidden; /* Agar sudut map juga melengkung */
+  overflow: hidden; 
   background: var(--light-text);
   margin-top: 20px;
 }
@@ -477,7 +465,7 @@ section {
 }
 
 .contact-map {
-  min-height: 400px; /* Menjaga tinggi peta di layar kecil */
+  min-height: 400px; 
 }
 
 .contact-form .form-row {
@@ -503,7 +491,7 @@ section {
   border-radius: 5px;
   border: 1px solid #ddd;
   transition: border-color 0.3s, box-shadow 0.3s;
-  font-family: 'Poppins', sans-serif; /* Menggunakan font yang sama */
+  font-family: 'Poppins', sans-serif; 
   font-size: 1rem;
 }
 
@@ -514,7 +502,7 @@ section {
 }
 
 .contact-form textarea.form-control {
-  resize: vertical; /* Membolehkan user mengubah tinggi textarea */
+  resize: vertical; 
 }
 
 .contact-form .btn {
@@ -524,20 +512,17 @@ section {
 }
 
 .contact-form .btn:hover {
-  background-color: #004225; /* Warna hijau lebih gelap */
+  background-color: #004225; 
 }
 
-/* Penyesuaian untuk layar kecil (Mobile) */
 @media (max-width: 992px) {
   .kontak-wrapper {
-    grid-template-columns: 1fr; /* Kolom menjadi 1 jika layar kecil */
+    grid-template-columns: 1fr; 
   }
 }
 
-/* --- Footer --- */
-/* --- Footer (Desain Baru) --- */
 #footer {
-  background-color: #1a1a1a; /* Warna gelap yang elegan */
+  background-color: #1a1a1a; 
   color: #ccc;
   font-size: 14px;
 }
@@ -562,7 +547,6 @@ section {
   margin-bottom: 20px;
 }
 
-/* Garis bawah judul kolom */
 #footer .footer-column h4::after {
   content: '';
   position: absolute;
@@ -640,7 +624,6 @@ section {
     color: var(--light-text);
 }
 
-/* --- Tombol Kembali ke Atas --- */
 #toTopBtn {
   display: none;
   position: fixed;
@@ -665,10 +648,8 @@ section {
   background-color: #d88441;
 }
 
-/* --- Media Queries (Responsif) --- */
 @media (max-width: 768px) {
   .nav-menu {
-    /* Nanti bisa ditambahkan menu hamburger di sini */
     display: none;
   }
   .product-grid,
@@ -683,7 +664,7 @@ section {
     font-size: 2.2rem;
   }
 }
-/* --- Tombol Load More --- */
+
 .load-more-container {
   text-align: center;
   margin-top: 80px;
@@ -705,13 +686,12 @@ section {
   position: center;
 }
 
-/* --- Filter Buttons --- */
 .filter-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-bottom: 40px;
-  flex-wrap: wrap; /* Agar tombol turun ke bawah jika layar kecil */
+  flex-wrap: wrap; 
 }
 
 .filter-btn {
@@ -726,10 +706,9 @@ section {
 }
 
 .filter-btn:hover {
-  background-color: #f0fff8; /* Warna hijau sangat muda */
+  background-color: #f0fff8; 
 }
 
-/* Style untuk tombol yang sedang aktif */
 .filter-btn.active {
   background-color: var(--primary-color);
   color: var(--light-text);
